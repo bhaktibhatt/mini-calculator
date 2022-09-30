@@ -4,11 +4,12 @@ body{
     color:#dfdce3;
     font-family: "Prompt", sans-serif;
     letter-spacing: 0.15vh;
-    font-size:1.5vmax ;
+    font-size:1.7vmax ;
 }
 h1{
     padding:0;
     margin:1vmax;
+    font-size:5vmax;
 }
 .main{
     display: flex;
@@ -38,8 +39,7 @@ h1{
     padding:0 1vmin 0 1vmin;
     width: 14vmax;
     height:3vmax;
-    margin-left:1vmin;
-    margin-right:1vmin;
+    margin:1.7vmax 1vmax 1vmax 1.7vmax;
     border-radius: 12px;
 }
 .in:hover{
@@ -77,7 +77,7 @@ h1{
 .result{
     all:unset;
     background-color:#e9bd65;
-    width: 14vmax;
+    width:14vmax;
     height:3vmax;
     padding:0 1vmin 0 1vmin;
     border-radius: 15px;
@@ -103,12 +103,18 @@ h1{
     .main {
         flex-direction: column;
     }
+    .result{
+        margin-bottom: 1.7vmax;
+    }
     .inputs {
         flex-direction: row;
     }
 }
-@media (max-width:450px){
+@media (orentation:landscape) and (max-width:450px){
     .inputs{
         flex-direction: row;
+    }
+    .main:{
+        font-size:100;
     }
 }

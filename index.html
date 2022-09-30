@@ -6,32 +6,36 @@
     <link rel="stylesheet" href="calc.css">
     <title>Mini Calculator</title>
 </head>
-<body>My
+<body>
     <script type="text/javascript" src="script.js" ></script>
-    <div style="display: flex;
+    <div><div style="display: flex;
     align-items: center;
     align-content: center;
-    justify-content: center;
-"><h1>Mini Calculator</h1></div>
+    justify-content: center;">
+    <h1>Mini Calculator</h1></div>
     <div class="main">
         <div class="op-val_res">
         <div class="inputs">
             <div class="space">
-                Enter Input A:<br><input class="in" type="text" id="num1">
+                Enter Input A:<br>
+                <input class="in" type="number" id="num1">
             </div>
             <div class="space">
-                Enter Input B:<br><input class="in" type="text" id="num2">
+                Enter Input B:<br>
+                <input class="in" type="number" id="num2">
             </div>
         </div>
-            <div class="space" id="res">Result:<br><input type="text" class="result"></div>
+            <div class="space">Result:<br></div>
+                <div class="result" id="res"></div>
         </div>
         <div class="options-box">
             <h4>SELECT OPERATION</h4>
-                <button class="btn">ADDITION</button>
-                <button class="btn">SUBTRACT</button>
-                <button class="btn">MULTIPLICATION</button>
-                <button class="btn">DIVISION</button>
-                <button class="btn">MOD</button>
+                <button class="btn" onclick="add()">ADDITION</button>
+                <button class="btn" onclick="sub()">SUBTRACT</button>
+                <button class="btn" onclick="mul()">MULTIPLICATION</button>
+                <button class="btn" onclick="div()">DIVISION</button>
+                <button class="btn" onclick="mod()">MOD</button>
+            </div>
         </div>
     </div>
 </body>
