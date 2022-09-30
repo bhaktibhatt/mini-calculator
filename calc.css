@@ -65,13 +65,14 @@ h1{
     width:22vmax;
     height:3vmax;
     border-radius:12px;
+    border:0.27vmax solid #e9bd65;
 }
 .btn:hover{
-    background-color:#e0ad47;
+    background-color:#4abdac;
+    border:0.27vmax solid#4abdac;
 }
 .btn:active{
-    border:0.25vmax solid;
-    border-color:#cf941f;
+    border:0.27vmax solid #fcd079;
 }
 .result{
     all:unset;
@@ -85,6 +86,16 @@ h1{
 }
 .result:hover{
     background-color:#e0ad47;
+}
+@media (max-width:200){
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+}
 }
 
 @media (max-width: 750px)
@@ -101,13 +112,3 @@ h1{
         flex-direction: row;
     }
 }
-/*
-Beige: #c8b7a6
-
-Perriwinkle: #7d94b5
-
-Dusty Rose: #c29591
-
-Maroon Brown: #703f37
-
-Muted Green: #b6c199*/
